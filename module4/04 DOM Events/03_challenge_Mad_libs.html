@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Mad libs</title>
+</head>
+<body>
+    
+    <h1>Mad Libs</h1>
+     
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+
+        var libButton = document.getElementById('lib-button');
+
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            var noun = document.getElementById("noun").value;
+            var adjective = document.getElementById("adjective").value;
+            var person = document.getElementById("person").value;
+            storyDiv.innerHTML = "This is my second time with EHA Academy. It has been a great moment with the sets of great mind I came across with during the first cohort, the teams were awesome it was as a resulted of their tutelage I felt in love of becoming a software developer and ever since I have this big dream of working in this organization as a new path of a career. And here I am again for the the second time with the same great minds just for the love of becoming a great software developer.";
+        };
+
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+</body>
+</html>

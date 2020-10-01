@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        background-color: beige;
+    }
+</style>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Change a Webpage Color</title>
+
+</head>
+
+<body>
+
+    <h1>Change Webpage background color via text (type blue).</h1>
+    <input type="text" id="colorInputText">
+    <input type="buttton" id="colorButton" value="Click to change Color" 
+    onclick="changeColor()">  
+
+    <script>
+         
+         function changeColor() {
+             let color = document.getElementById("colorInputText").value;
+             document.body.style.backgroundColor = color;
+         }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Cars Listing</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        // An array of car listing
+
+        var carList = ['toyota', 'honda', 'mazda', 'mitsubishi', 'tesla', 'lexus'];
+        function firstLast(array) {
+
+            var firstCar = carList[0];
+            var lastCar = carList[carList.lenth-1];
+
+            var outPut = {
+                firstCar: firstCar,
+                lastCar: lastCar,
+            };
+
+            return outPut;
+
+        }
+
+        var display = firstLast(carList);
+
+        // car list displaying 
+        console.log(display);
+
+
+        //adding new car to the list
+        carList[6] = 'mercedes-benz';
+
+
+        //new car added is login 
+        console.log(carList);
+
+
+        //loop through the car list
+        carList.forEach(function (value, index) {
+            console.log(index+1, value);
+
+        });
+
+    </script>
+    
+</body>
+
+</html>

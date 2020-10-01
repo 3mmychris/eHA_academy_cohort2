@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: #f6f6f6;
+            font-family: serif;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        header {
+            background-color: #008489;
+            height: 62px;
+        }
+
+        header * {
+            color: white;
+        }
+
+        header .logo {
+            float: left;
+            height: inherit;
+            margin-left: 2em;
+            
+        }
+
+        header .logo-text {
+            margin: 10px;
+            font-family: serif;
+        }
+
+        header .logo-text span {
+            color: #06c4ca;
+        }
+        
+
+        header ul {
+            float: right;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        
+        }
+
+
+        header ul li {
+            float: left;
+            position: relative;
+        }
+
+        header ul li ul {
+            position: absolute;
+            top: 62px;
+            right: 0px;
+            width: 180px;
+            display: none;
+
+        }
+
+        header ul li:hover ul {
+            display: block;
+
+        }
+        header ul li ul li {
+             width: 100%;
+        }
+
+        header ul li ul li a {
+            padding: 10px;
+            background: white;
+            color: #444;
+        }
+
+        header ul li ul li a.logout {
+            color: red;
+        }
+
+        header ul li ul li a:hover {
+            background: #a1a1a1;
+        }
+
+
+        header ul li a {
+            display: block;
+            padding: 21px;
+            font-size: 1.1em;
+            text-decoration: none;
+
+        }
+
+        header ul li a:hover {
+            background: #006669;
+            transition: 0.5s;
+        }
+
+        header .menu_toggle {
+            display: none;
+             
+        }
+
+        #footer {
+            font-family: sans-serif;
+            text-align: center;
+            color: #006868;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <h1 class="logo-text"><span>My</span>Journey</h1>
+        </div>
+    
+        <ul class="nav">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Sign-Up</a></li>
+            <li><a href="#">Login</a></li>
+
+            <li>
+                <a href="#">Christopher Emmanuel</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+
+            </li>
+
+        </ul>  
+
+    </header>
+
+    <h2>My Story</h2>
+    
+    <p>
+        I should really consider software engineering as a new career, what do you think! I think I would be great at it. Growing up in a home where none of my parents went to school was really something terrible and frustrating, I was almost at the verge of giving up my stand in life. But as I get to study the whole situation as it get worst I was determined to hold on to a great faith and dream of becoming somebody great and renowned someday. I was so determined about making my own part different form my parents.<br>
+    </p>
+
+    <h3>College</h3>
+    <p>
+        I entered the University in 2013 as Industrial Chemistry major. I was never hundred percentage engrave with the course of study given to me because that was not my dream course, but I was very positive and determined to graduate with a second class upper. As my first semeter drew very close, I was was so full of fears on how to go about studying hard to prepare fot my exams because I had spent so much time at home without knowing a content of a book and now I will need to go through a hell of materials, preparing for tests and semester exams. I was so scared and wrote my first semester exams with unease mind and later came out well, but was not to happy though. after the first semeste exams I made some friends who where good with chemistry and so they helped me out in gaining stand once again from a very long space of time that I had left book for somehting meaningless.
+    </p>
+
+    <h3>eHA Academy</h3>
+
+    <p>
+        After my gradaution from the university, I decided to change to a new career, so I became so passionate about learning programming language because all the people around speaks of the new trends in technology. The very moment I made my mind to change my line of career, I started learning programming online from Youtube but honestly speaking I don't understand anything even though it seeems so easy in the mind of the tutors, all I had always said is that I need physical coaching, until I heard of eHA Academy, my first home when it comes to learning programming and coding. I was admitted into the eHA Academy cohort 1 and the experience was enjoyably incredible can't ever forget how they treated us as one. They stirred up in me the zeal of becoming a software engineer and I have been encouraged personally on that.<br>
+        The standard of tutelage was so impressives and comprehensive to the best. It was indeed an atmosphere where you get to meet genius and and wonderful set of team who believes in uniqueness and delivery. Then and there I know been around such amazing people will definetly fine tune you into a great software developer.
+    </p>
+
+    <p id="footer"> 25 August, 2020 | Christopher</p>
+
+    
+</body>
+</html>
